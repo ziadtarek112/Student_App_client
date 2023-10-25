@@ -10,11 +10,11 @@ const Announcement = () => {
     
     useEffect(() => {
         dispatch(fetchAnnouncements())
-    }, [dispatch])
+    }, [annoucements,dispatch])
 
     return (
         <div className={styles.container}>
-            {annoucements.map((annoucement) => <Card title="Annoucement" minWidth ="800" maxWidth ="1000">
+            {annoucements.map((annoucement) => <Card title= "Announcement" cont ="containerAnnoucement" >
                 <div className={styles.annoucementContent}>
                     <div className={styles.profile}>
                         <h3>{annoucement.teacherName}</h3>

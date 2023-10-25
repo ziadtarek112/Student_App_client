@@ -22,11 +22,15 @@
     text-align: center;
 }
 
-.sidebarLink:hover {
+.sidebarLink:hover,
+.sidebarLink:active,
+.sidebarLink:focus {
     background-color: #0074D9;
-
 }
 
+.sidebarLink:visited {
+    background-color: #0056A0;
+}
 
 @media (max-width: 768px) {
     .sidebar {

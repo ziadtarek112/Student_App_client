@@ -7,6 +7,8 @@
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 5px;
+    margin: 10px 10px;
+
 }
 
 .ButtonStyle:hover {

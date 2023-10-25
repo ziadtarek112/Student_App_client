@@ -1,9 +1,17 @@
-.container{
+.containerQuiz{
     background-color: #F4F4F4;
     min-width: 200px;
     max-width: 400px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     padding: 10px 20px;
+}
+.containerAnnoucement{
+    background-color: #F4F4F4;
+    min-width: 500px;
+    max-width: 700px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
 .topbar{
     display: flex;
@@ -17,7 +25,11 @@
 }
 
 @media (max-width: 768px) {
-    .container{
-        width: 100%;
+    .containerQuiz{
+        width: 95%;
+    }
+    .containerAnnoucement{
+        width: 90%;
+        margin: 10px 10px;
     }
 }

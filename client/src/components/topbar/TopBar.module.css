@@ -4,6 +4,32 @@
     justify-content: center;
     padding: 10px;
     height: 40px;
-    background-color:#333;
+    background-color: #333;
     color: white;
+    width: 100%;
+    position: fixed;
+}
+
+.containerAuth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+}
+
+
+.titleAuth {
+    margin-left: 50%
+}
+
+.buttonContainer {
+    margin-left: auto;
+
 }

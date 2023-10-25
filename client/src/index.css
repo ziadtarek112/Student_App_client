@@ -9,6 +9,8 @@ body {
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-family: 'Urbanist', sans-serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;

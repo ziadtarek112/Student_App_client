@@ -9,7 +9,7 @@ const Quiz = () => {
 
     useEffect(() => {
         dispatch(fetchQuizzes())
-    }, [dispatch])
+    }, [quizzes,dispatch])
 
     return (
         <div className={styles.container}>
