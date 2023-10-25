@@ -13,22 +13,15 @@ const Quiz = () => {
 
     return (
         <div className={styles.container}>
-
-
             {quizzes.map((quiz) => <Card title="Quiz due" >
                 <div className={styles.quizContent}>
                     <h2>{quiz.title}</h2>
                     <p>Course : {quiz.courseName}</p>
                     <p>Topic : {quiz.topic}</p>
                     <p>Due to : {new Date(quiz.dueDate).toISOString()}</p>
-
                 </div>
-
             </Card>)}
-
         </div>
-
-
     )
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Card.module.css'
-const Card = ({ title, children }) => {
+const Card = ({ title, children ,minWidth,maxWidth }) => {
     return (
-        <div className={styles.container}>
+        <div  className={styles.container}>
             <div className={styles.topbar}>
                 <h1>{title}</h1>
                 <h4>All</h4>

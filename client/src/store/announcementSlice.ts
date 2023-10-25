@@ -8,7 +8,7 @@ const announcementSlice = createSlice({
     initialState: announcementInitialState,
     reducers: {
         getAnnouncements(state,action){
-            state = action.payload;
+            state.announcements = action.payload;
         }
     }
 });
@@ -16,11 +16,11 @@ const announcementSlice = createSlice({
 export const {getAnnouncements} = announcementSlice.actions;
 export const fetchAnnouncements = () => async (dispatch) => {
     try{
-        const announcements = await  axios.get('/api/Quiz');
-        dispatch(getAnnouncements(announcements))
+        const announcements = await axios.get('http://localhost:4000/api/Announcement');
+        dispatch(getAnnouncements(announcements.data))
     }
     catch (error){
-        console.log("Error fetchin Data");
+        console.log("Error fetching Data");
         
     }
 }
